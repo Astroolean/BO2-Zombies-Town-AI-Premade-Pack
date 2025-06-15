@@ -132,7 +132,7 @@ handle_gamble_attempt(trigger)
             self.score -= gamble_cost;
             self iprintlnbold("Gambling...");
 
-            wait 5;
+            wait 1.5;
 
             roll_for_points_reward(self);
         }
