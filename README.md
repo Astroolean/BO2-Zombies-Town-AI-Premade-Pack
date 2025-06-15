@@ -1,6 +1,10 @@
 # 🧟‍♂️ [Release] [ZM] BO2 Zombies: Town AI Premade Pack
 
-(IMAGES FILE WAS TOO BIG, MADE INTO A RAR FILE, AND PUT UP ON MEDIAFIRE -> https://www.mediafire.com/file/f23prijq3pv6hj2/images.rar/file)
+## 📥 Download
+
+The folder was too big so you can download it here:
+
+👉 [**Download images folder**](https://www.mediafire.com/file/f23prijq3pv6hj2/images.rar/file)
 
 ## 🔗 Linked Mods & Resources
 
