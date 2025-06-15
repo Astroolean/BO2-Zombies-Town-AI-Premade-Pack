@@ -1,5 +1,5 @@
 // === Fire Damage Immunity Script (BO2 Zombies - Town) ===
-// Author: ChatGPT & Ashton
+// Author: ChatGPT & Astroolean
 // Final Version — Corrected Logic Based on Damage Detection + Z Height
 // This script prevents players from taking damage from environmental fire/lava
 // if they are on the ground and within the typical lava height range.
