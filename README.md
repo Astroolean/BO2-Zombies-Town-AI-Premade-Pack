@@ -1,5 +1,7 @@
 # 🧟‍♂️ [Release] [ZM] BO2 Zombies: Town AI Premade Pack
 
+(IMAGES FILE WAS TOO BIG, MADE INTO A RAR FILE, AND PUT UP ON MEDIAFIRE -> https://www.mediafire.com/file/f23prijq3pv6hj2/images.rar/file)
+
 ## 🔗 Linked Mods & Resources
 
 - [ALL WEAPONS](https://forum.plutonium.pw/topic/37621/release-zm-mod-zm_weapons-adding-all-weapons-to-maps?)  
