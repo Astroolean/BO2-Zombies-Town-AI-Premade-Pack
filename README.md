@@ -1,1 +1,80 @@
-# -Release-ZM-BO2-Zombies-Town-AI-Premade-Pack
+# 🧟‍♂️ [Release] [ZM] BO2 Zombies: Town AI Premade Pack
+
+## 🔗 Linked Mods & Resources
+
+- [ALL WEAPONS](https://forum.plutonium.pw/topic/37621/release-zm-mod-zm_weapons-adding-all-weapons-to-maps?)  
+- [MORE PERKS](https://forum.plutonium.pw/topic/32538/release-zm-black-ops-2-custom-perks)  
+- [ADDS BANK / MORE](https://forum.plutonium.pw/topic/37280/bo2-zombies-custom-control-pannel-gsc-menu)  
+- [ADDS CW FEATURES](https://forum.plutonium.pw/topic/15807/release-zombies-cold-war-mod-final-update)  
+- [SHARE BOX / PERKS IN BOX](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
+- [PERMA PERKS UNLOCKED](https://github.com/osmnbtrclk/bo2_zm_bots)  
+- [FIXES HIGH ROUNDS](https://github.com/teh-bandit/Plutonium-T6ZM/tree/main/High%20Round%20Fix)  
+
+---
+
+Thank you for reading and have a wonderful rest of your day!  
+The banking will reset upon exiting and reopening the game...  
+That's what I call above my paygrade... So, some stuff I can't do, however this works!
+
+Town was my favorite and the nostalgia is what keeps bringing me back...  
+I made this because I was bored and had some time to spare...  
+Yes, I did not code any of this however I heavily modified some stuff with AI.  
+Took a lot of troubleshooting and trial and error. Kept running into error, after error, after error...  
+Then everything just randomly started to work... So I didn’t question it and kept working along.  
+Yes, I renamed all the files because I have OCD and wanted them to all be named similarly.  
+
+---
+
+## 🛠️ The following were custom made via AI:
+
+- 🔥 NO FIRE DAMAGE (TOGGLE ON/OFF RIGHT ON D-PAD)  
+- 🎯 CHOOSE A STARTING WEAPON (MINIMAL SELECTION FOR TESTING)  
+- 🎰 GAMBLING IN THE BAR AT TOWN (COSTS 500 POINTS A SPIN; WIN OR RISK IT ALL)  
+- 👋 A SIMPLE WELCOME MESSAGE UPON STARTING... NOTHING MUCH...
+
+---
+
+As for `[IMPORTANT] PLUTONIUM FIX.gsc` — I cannot remember when and where I got that...  
+All I know is that it fixes the spawn rates. I got that a few years back when I first downloaded Plutonium.  
+If I remember where I found it I'll credit the author — I just really can’t remember.
+
+As for `ranked.gsc` and `_clientids.gsc` — as far as I’m aware, that’s needed to make everything work...  
+I went into this blind. I got super stoned and worked on this with the help of **ChatGPT** and **Gemini** specifically. Overall, this took me over a week to setup... AI is very fast... My end goal is just to play the game lol...
+
+So for the record:  
+I am **not claiming** that I coded any of this at all.  
+I simply got it made with AI and now I want to release it.  
+In case others may be interested and/or potentially want to improve on it.  
+This way it’s like a fully premade setup for Town.  
+Enable the mod for all weapons on all maps... 
+Backup your current images and scripts setup...
+Remove your images and scripts folder and replace it with this one found on github. 
+**Remember to make backups** along the way — I’ve made that mistake of forgetting many times...
+
+---
+
+Once again, only posting this for those who care.  
+And if you don’t care, please feel free to move along — it’s all good.  
+Just uploading this in case anyone actually wants it...
+
+I’m trying my hardest to give credit where credit is due...  
+If I left anyone out, please let me know and I’ll update this.  
+I love this game and just wanted to dedicate some of my time to make something with AI for it.  
+This is me using my time to give back to the game — maybe someone will find this and be like:  
+**"Damn, I actually wanted that."**
+
+---
+
+**For those who care — you're welcome.**
+
+---
+
+## 📸 Screenshots
+
+![1](https://github.com/user-attachments/assets/a1f889f8-2eba-41ea-9463-0410fb201009)
+![2](https://github.com/user-attachments/assets/a5385179-b7fb-4418-8f3e-bd5672a63328)
+![3](https://github.com/user-attachments/assets/4145dada-9990-4957-b48e-a2ba405a4d8a)
+![4](https://github.com/user-attachments/assets/09f35f98-f4d6-4e1a-94a7-4e3ccac771c3)
+![5](https://github.com/user-attachments/assets/d5f1aaac-5084-4f77-bb9d-6be725dc71b9)
+
+
