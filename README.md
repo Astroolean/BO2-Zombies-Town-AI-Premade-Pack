@@ -81,6 +81,8 @@ This is me using my time to give back to the game — maybe someone will find th
 ![2](https://github.com/user-attachments/assets/a5385179-b7fb-4418-8f3e-bd5672a63328)
 ![3](https://github.com/user-attachments/assets/4145dada-9990-4957-b48e-a2ba405a4d8a)
 ![4](https://github.com/user-attachments/assets/09f35f98-f4d6-4e1a-94a7-4e3ccac771c3)
+![5](https://github.com/user-attachments/assets/d5f1aaac-5084-4f77-bb9d-6be725dc71b9)
+
 
 ## 🚧 Future Plans & Improvements
 
@@ -116,6 +118,3 @@ If you're a GSC wizard, coder, or just someone passionate about modding BO2 Zomb
 
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
-![5](https://github.com/user-attachments/assets/d5f1aaac-5084-4f77-bb9d-6be725dc71b9)
-
-
