@@ -78,10 +78,19 @@ This is me using my time to give back to the game — maybe someone will find th
 ## 📸 Screenshots
 
 ![1](https://github.com/user-attachments/assets/a1f889f8-2eba-41ea-9463-0410fb201009)
-![2](https://github.com/user-attachments/assets/a5385179-b7fb-4418-8f3e-bd5672a63328)
-![3](https://github.com/user-attachments/assets/4145dada-9990-4957-b48e-a2ba405a4d8a)
-![4](https://github.com/user-attachments/assets/09f35f98-f4d6-4e1a-94a7-4e3ccac771c3)
-![5](https://github.com/user-attachments/assets/d5f1aaac-5084-4f77-bb9d-6be725dc71b9)
+-
+![2](https://github.com/user-attachments/assets/a451fef1-74a3-4a2c-ae8a-516fa1440e4f)
+![3](https://github.com/user-attachments/assets/07e80194-a6f6-44c7-8900-ed1fca19a1ec)
+![4](https://github.com/user-attachments/assets/a638ec2e-57f7-415a-a226-11b6baf10793)
+![5](https://github.com/user-attachments/assets/49f1ab56-9bcc-4cde-bc74-45e8b6fdf39b)
+![6](https://github.com/user-attachments/assets/0560ca55-7a36-4aca-a529-97c31b5a045e)
+-
+![7](https://github.com/user-attachments/assets/4145dada-9990-4957-b48e-a2ba405a4d8a)
+-
+![8](https://github.com/user-attachments/assets/09f35f98-f4d6-4e1a-94a7-4e3ccac771c3)
+-
+![9](https://github.com/user-attachments/assets/770e8512-b868-437f-91ef-0fdcd8bbc628)
+-
 
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
