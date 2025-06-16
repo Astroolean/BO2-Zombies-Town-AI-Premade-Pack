@@ -83,38 +83,5 @@ This is me using my time to give back to the game — maybe someone will find th
 ![4](https://github.com/user-attachments/assets/09f35f98-f4d6-4e1a-94a7-4e3ccac771c3)
 ![5](https://github.com/user-attachments/assets/d5f1aaac-5084-4f77-bb9d-6be725dc71b9)
 
-
-## 🚧 Future Plans & Improvements
-
-In the future, I’d love to take this premade AI setup even further.
-
-I'm just a **casual player who likes to smoke weed and chill**, and this started as a passion project fueled by nostalgia and boredom. That said, I know there's way more potential here — and I’d **be willing to pay** people to help expand or clean up the project professionally.
-
-For now, I plan to keep pushing forward using **AI tools and scripting help** wherever possible to bring these ideas to life. I can't afford to hire anyone at the moment — but in the future, I definitely plan to **hire a GSC pro or dev** to polish it all up and take it to the next level.
-
-Some things I’ve thought about adding:
-
-- 💬 More funny/random events (like funny quotes, dumb HUD messages, or easter eggs)  
-- 📉 Debt system expansion (like unlocking weird rewards the more in debt you go)  
-- 🎲 Alternate gambling machines or hidden risk/reward mechanics  
-- 🔊 Custom sound triggers (like a sound when you go bankrupt or hit jackpot)  
-- 💀 Custom powerups (like "420 Mode" where time slows for 10 seconds or some trippy filter hits)  
-- 🕹️ Mini in-game challenges (like “Survive 30 seconds in the bar” for a reward)  
-- 🔫 420-themed Pack-a-Punch camo (animated or non-animated — just needs to be good)  
-- 🌌 Galaxy skybox or space textures (if it's possible to override visuals cleanly)  
-- 🎶 Round Milestone Music — Subtle stings on Rounds 10, 20, 30, etc. to give a sense of progression  
-- 🛡️ Buildable Zombie Shield — Reflects 10–20% melee damage; cooldown & HUD icon for balance  
-- 🔄 Perk Swap Machine — Pay 1000 points to trade one active perk for another using a HUD menu  
-- 📝 Round Intro Titles — Every 5 rounds shows a small cinematic title like:  
-- 🔥 BO3 Specialist Powers — Powers like temp invincibility, insta-melee, or super speed  
-- 📻 Interactive Radio Messages — Radios placed around the map play fake lore or funny voice lines  
-- 📢 Custom Announcer Toggle — Switch between announcers mid-game (Richtofen, Samantha, Maxis)  
-- ⏱️ Live Round Timer — Displays how long each round took; cool for speedrun vibes  
-- 👂 Zombie Spawn Audio Tracker — Subtle sound cue when 10 zombies remain, or alert when 3 are left  
-- 🎥 Round-End Zombie Camera Tracker — Cinematic zoom or quick killcam replay when final zombie dies  
-- 🏅 Overkill Bonus — 50+ kill lead = bonus: 500 Points, Max Ammo, or 1-Hit Knife next round  
-
-If you're a GSC wizard, coder, or just someone passionate about modding BO2 Zombies — feel free to reach out. Whether you want to contribute or work out a paid collab, I’m open to it.
-
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
