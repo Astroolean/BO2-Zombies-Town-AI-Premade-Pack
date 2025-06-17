@@ -14,7 +14,6 @@ The folder was too big so you can download it here:
 - [ADDS CW FEATURES](https://forum.plutonium.pw/topic/15807/release-zombies-cold-war-mod-final-update)  
 - [SHARE BOX / PERKS IN BOX](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
 - [PERMA PERKS UNLOCKED](https://github.com/osmnbtrclk/bo2_zm_bots)  
-- [FIXES HIGH ROUNDS](https://github.com/teh-bandit/Plutonium-T6ZM/tree/main/High%20Round%20Fix)
 - [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)  
 - [Cold War Rounds Algorithm](https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm)  
 - [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)
