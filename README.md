@@ -14,7 +14,10 @@ The folder was too big so you can download it here:
 - [ADDS CW FEATURES](https://forum.plutonium.pw/topic/15807/release-zombies-cold-war-mod-final-update)  
 - [SHARE BOX / PERKS IN BOX](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
 - [PERMA PERKS UNLOCKED](https://github.com/osmnbtrclk/bo2_zm_bots)  
-- [FIXES HIGH ROUNDS](https://github.com/teh-bandit/Plutonium-T6ZM/tree/main/High%20Round%20Fix)  
+- [FIXES HIGH ROUNDS](https://github.com/teh-bandit/Plutonium-T6ZM/tree/main/High%20Round%20Fix)
+- [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)  
+- [Cold War Rounds Algorithm](https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm)  
+- [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)
 
 ---
 
@@ -80,9 +83,13 @@ This is me using my time to give back to the game — maybe someone will find th
 ![1](https://github.com/user-attachments/assets/a1f889f8-2eba-41ea-9463-0410fb201009)
 -
 ![2](https://github.com/user-attachments/assets/a451fef1-74a3-4a2c-ae8a-516fa1440e4f)
+-
 ![3](https://github.com/user-attachments/assets/07e80194-a6f6-44c7-8900-ed1fca19a1ec)
+-
 ![4](https://github.com/user-attachments/assets/a638ec2e-57f7-415a-a226-11b6baf10793)
+-
 ![5](https://github.com/user-attachments/assets/49f1ab56-9bcc-4cde-bc74-45e8b6fdf39b)
+-
 ![6](https://github.com/user-attachments/assets/0560ca55-7a36-4aca-a529-97c31b5a045e)
 -
 ![7](https://github.com/user-attachments/assets/4145dada-9990-4957-b48e-a2ba405a4d8a)
@@ -91,6 +98,17 @@ This is me using my time to give back to the game — maybe someone will find th
 -
 ![9](https://github.com/user-attachments/assets/770e8512-b868-437f-91ef-0fdcd8bbc628)
 -
+![10](https://github.com/user-attachments/assets/534efdb1-7941-47d2-883e-bd94e77c7b60)
+-
+![11](https://github.com/user-attachments/assets/dc800300-0879-4e16-8137-6ef292304938)
+-
+![12](https://github.com/user-attachments/assets/eeb73f24-c883-4f00-b4a5-a3f2335ac889)
+-
+![13](https://github.com/user-attachments/assets/31410fd1-b029-4f0d-aeff-06eacd9234d4)
+-
+![14](https://github.com/user-attachments/assets/4238589d-751e-4271-b78c-3e46cc7a5a58)
+-
+
 
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
