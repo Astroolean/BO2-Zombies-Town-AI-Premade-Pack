@@ -136,7 +136,7 @@ onPlayerSpawned()
         if (!self.MenuInit)
         {
             self.MenuInit = true; // Set flag to true to prevent re-initialization.
-            self.score = 5000; // Give 500,000 points for testing
+            //self.score = 5000; // Give 500,000 points for testing
             self thread MenuInit();              // Initialize the custom menu system.
             self thread closeMenuOnDeath();      // Setup thread to close menu on player death.
             self freezeControls(false);         // Ensure controls are not frozen initially.
