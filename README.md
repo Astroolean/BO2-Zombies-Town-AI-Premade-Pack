@@ -203,6 +203,142 @@ This is me using my time to give back to the game — maybe someone will find th
 
 ---
 
+## ✈️ New Feature: Custom Exfil System (`custom_exfil.gsc`)
+
+> *Escape instead of endlessly surviving.*
+
+- 🔓 Unlocks on **Round 11**, then appears every **5 rounds**  
+- 🗳️ Interact with the **Exfil Point** (usually a radio) to start a vote  
+- 👥 All living players must vote **yes within 15 seconds**
+
+### 🔥 Exfil Challenge:
+- ⚠️ Zombies become **faster** and **more aggressive**
+- 🧟 Up to **40 zombies** spawn during the sequence  
+- 💀 **Map minibosses** (e.g. *Brutus*, *Mechz*) will appear  
+- ⏱️ You have **120 seconds** to clear all enemies  
+
+### ✅ Success Conditions:
+- 🔓 After clearing all zombies, the **Exfil Portal** opens  
+- 🏃 Players must reach the portal before time runs out  
+- 👑 **All inside = Exfil Successful**  
+- ☠️ **Anyone outside = Downed + Exfil Failed**
+
+---
+
+## 🏃 Custom Sprint System (`custom_sprint.gsc`)
+
+> *Always sprint, always fast.*
+
+- 🏃 Unlimited sprint from game start  
+- 🔄 Applied on every spawn automatically  
+- ✅ HUD message: “Unlimited Sprint Activated!”
+
+---
+
+## 🔄 Custom Rounds System (`custom_rounds.gsc`)
+
+> *Mimics Cold War's round pacing and enemy scaling.*
+
+- 📊 Round progression formula inspired by **Cold War Zombies**  
+- 🎯 **Rounds 1–5** have static counts for early-game accuracy  
+- ⚙️ Later rounds scale using multipliers and increment rules  
+- 👥 Dynamic zombie count adjusts based on **player count**
+
+---
+
+## ⚙️ `custom_menu.gsc` Version 2 Updates
+
+### Zombie Counter & HUD
+- **Zombie Counter** is now a **standalone GSC script**, no longer embedded in the Control Panel Menu.
+- HUD elements relocated to the **top-left** of the screen, showing:
+  - **Player Level**
+  - **Point Scaling**
+  - **Bullet Damage**
+  - **Highest Round Reached**
+  - **Instructions for the Control Panel Menu**
+- HUD text updated for ranking up point scaling, bullet damage, and level.
+
+### Player Menu Enhancements
+- **AFK Mode Toggle** moved into the new Player Menu.
+- Added new features:
+  - **FOV Slider** for adjustable Field of View.
+  - **Zombie ESP Toggle** for enhanced enemy visibility.
+
+### Perk Shop Introduction
+- New Perk Shop allows easy purchase of:
+  - **Juggernog**
+  - **Speed Cola**
+  - **Double Tap**
+  - **Quick Revive**
+  - **Stamin-Up**
+
+### Weapon Options Menu
+- Added new options:
+  - **Pack-a-Punch** upgrades.
+  - Buy **Max Ammo**.
+  - **Spin the Mystery Box** directly from the menu.
+  > Costs **$2500** to spin, giving you either a **regular** or a **Pack-a-Punched** weapon.
+  >  
+  > 🎲 You have a **30% chance** to receive a powerful **Pack-a-Punched weapon**, offering high value at a low cost!
+
+
+### Banking Menu Update
+- A **10% increment** is now available to all **bank deposits and withdrawals**.
+
+---
+
+## 🎲 `custom_gamble.gsc` Version 2 Updates
+
+### 1. Gamble Mode Selector  
+- Players can toggle between **Standard** and **High-Roller** modes.
+- Press `{+speed_throw}` (L2/LT) inside the gamble zone to switch modes.
+- Mode tracked by variable `self.gamble_mode`.
+
+### 2. Debt System with Consequences  
+- Negative points trigger escalating debt levels:
+  - **Level 1:** Movement speed reduced for 30 seconds.
+  - **Level 2:** Weapons removed; player receives random non-Pack-a-Punch weapon.
+  - **Level 3:** Spawns 3 “debt ghost” models around the player.
+  - **Level 4:** Player shell-shocked; screen color changed for 10 seconds.
+- Debt level tracked via `self.player_debt_level`, checked after every gamble.
+
+### 3. Gamble Costs & Rewards Adjusted  
+- Gamble cost depends on mode:
+  - **500 points** in **Standard** mode.
+  - **2500 points** in **High-Roller** mode.
+- Different reward/loss probabilities and ranges per mode.
+- Standard mode includes small gains/losses and a small jackpot.
+- High-Roller mode has bigger stakes with chances for mega jackpot or bankruptcy.
+
+### 4. HUD & Interaction Improvements  
+- Removed `player_gamble_hud_setup()` — HUD now handled externally.
+- Hint text updated to display controls for gambling and mode switching.
+- Button mapping changed from `{+use}` to `{+gostand}` for gamble action.
+- Mode switching toggles `self.gamble_mode` on button press.
+
+### 5. Additional Changes  
+- Gambling disabled while player is in debt.
+- Uses `randomintrange(min, max)` for reliable random rewards.
+- HUD message positions fixed — no more X/Y offset issues.
+- Slightly increased trigger radius around the totem for easier interaction.
+
+---
+
+## 📋 Summary
+
+This update improves gameplay and UI by:
+
+- Separating the Zombie Counter from the Control Panel menu.
+- Relocating and enhancing HUD elements for better clarity.
+- Enhancing the Player Menu with AFK mode, FOV slider, and Zombie ESP.
+- Introducing a streamlined Perk Shop experience.
+- Adding weapon management options within the menu.
+- Updating the Banking Menu to include a 10% fee on all deposits and withdrawals.
+- Revamping `custom_gamble.gsc` with gambling mode switching, layered debt system, and updated reward mechanics.
+- Improving HUD prompts and interaction controls for gambling.
+
+These improvements bring deeper gameplay mechanics, clearer feedback, and a more polished user experience. A special thanks to @SniperCHYF25 for helping make this possible with what he created.
+
 ---
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
