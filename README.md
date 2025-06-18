@@ -24,7 +24,8 @@ The folder was too big so you can download it here:
 - [Complete Texture Overhaul](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival)  
 - [More Perks](https://forum.plutonium.pw/topic/32538/release-zm-black-ops-2-custom-perks)  
 - [Perma Perks Unlocked](https://github.com/osmnbtrclk/bo2_zm_bots)  
-- [Share Box / Perks in Box](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
+- [Share Box / Perks in Box](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)
+- [Spongebob Zombie Announcer](https://forum.plutonium.pw/topic/24019/release-zm-spongebob-announcer-voice)
 - [Vanguard Perk HUD Animation](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation)  
 - [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)
 
