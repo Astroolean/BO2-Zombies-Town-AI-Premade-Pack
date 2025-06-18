@@ -131,7 +131,66 @@ This is me using my time to give back to the game — maybe someone will find th
 ![24](https://github.com/user-attachments/assets/ce5cc59a-a0c2-4bd2-900e-c290614e1085)
 -
 
+## 🎲 Roll Range to Reward Mapping (`custom_gamble.gsc`)
 
+| `roll` Range         | % Chance | Reward Range        | Notes                |
+|----------------------|----------|---------------------|----------------------|
+| `< 30`               | 30.00%   | -5000 to 0          | Big negative loss    |
+| `30 <= roll < 60`    | 30.00%   | -2000 to 0          | Small negative loss  |
+| `60 <= roll < 85`    | 25.00%   | 0 to +3000          | Small win            |
+| `85 <= roll < 97.5`  | 12.50%   | 0 to +5000          | Medium win           |
+| `97.5 <= roll < 99.5`| 2.00%    | 0 to +10000         | Big win              |
+| `>= 99.5`            | 0.50%    | -10000              | BANKRUPT             |
 
+---
+
+## 📊 Summary of Probabilities
+
+| Outcome Type      | Chance (%) |
+|-------------------|------------|
+| Negative Reward   | 60.50%     |
+| Positive Reward   | 39.50%     |
+
+- **Losses dominate** the odds (especially smaller and moderate losses).
+- **Only 2.5% chance** to gain **more than 5000 points**.
+- **0.5% chance** of losing **exactly 10,000 points**.
+
+---
+
+## 🎯 Jackpot vs. Bankrupt
+
+- **Jackpot (+10,000)**: 2.00%
+- **Bankrupt (-10,000)**: 0.50%
+
+➡️ Hitting a **jackpot** is **4× more likely** than going **bankrupt**.
+
+---
+
+## 🔫 Custom Ammunition System (`custom_ammo.gsc`)
+
+> *Pack-a-Punch gets a full upgrade.*
+
+- 💸 **Dynamic pricing**: 5000 / 2500 / 1000 depending on PaP tier  
+- 🎞️ Third-person animations, ammo refill, and interaction changes  
+- 🔄 Randomly assigns **one of seven AATs** when PaP’ing:
+
+### 🧪 Alternate Ammo Types:
+| Effect        | Color     | Description |
+|---------------|-----------|-------------|
+| **Thunder Wall** | Cyan      | Blasts zombies backward, high force |
+| **Fireworks**    | Green     | Spawns a temp auto-firing weapon |
+| **Turned**       | Pink      | Turns one zombie into an ally |
+| **Cluster**      | Brown     | Spawns multiple grenades |
+| **Headcutter**   | Magenta   | Deals head damage + AoE |
+| **Explosive**    | Blue      | Bullets deal splash damage |
+| **Blast Furnace**| Red       | Sets groups of zombies on fire |
+
+- ⏲️ Each AAT has **individual cooldowns**  
+- 📈 Effects **scale by round number**  
+- 🧠 New **HUD element** shows your AAT in real-time
+
+---
+
+---
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
 Thanks again to anyone who even looks at this or gives it a shot in-game.
