@@ -8,18 +8,18 @@ The folder was too big so you can download it here:
 
 ## 🔗 Linked Mods & Resources
 
-- [ALL WEAPONS](https://forum.plutonium.pw/topic/37621/release-zm-mod-zm_weapons-adding-all-weapons-to-maps?)  
-- [MORE PERKS](https://forum.plutonium.pw/topic/32538/release-zm-black-ops-2-custom-perks)  
-- [ADDS BANK / MORE](https://forum.plutonium.pw/topic/37280/bo2-zombies-custom-control-pannel-gsc-menu)  
-- [ADDS CW FEATURES](https://forum.plutonium.pw/topic/15807/release-zombies-cold-war-mod-final-update)  
-- [SHARE BOX / PERKS IN BOX](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
-- [PERMA PERKS UNLOCKED](https://github.com/osmnbtrclk/bo2_zm_bots)  
-- [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)  
+- [Adds Bank / More](https://forum.plutonium.pw/topic/37280/bo2-zombies-custom-control-pannel-gsc-menu)  
+- [Adds CW Features](https://forum.plutonium.pw/topic/15807/release-zombies-cold-war-mod-final-update)  
+- [Adds Exo-Suit](https://forum.plutonium.pw/topic/16912/release-zombies-exo-suit-mod)  
+- [All Weapons](https://forum.plutonium.pw/topic/37621/release-zm-mod-zm_weapons-adding-all-weapons-to-maps)  
+- [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)  
 - [Cold War Rounds Algorithm](https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm)  
-- [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)
-- [Complete Texture Overhaul]([https://forum.plutonium.pw/topic/29069/release-zm-exfil-system](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival))  
-- [ADDS EXO-SUIT]([https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm](https://forum.plutonium.pw/topic/16912/release-zombies-exo-suit-mod))  
-- [Vanguard Perk HUD Animation]([https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation))
+- [Complete Texture Overhaul](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival)  
+- [More Perks](https://forum.plutonium.pw/topic/32538/release-zm-black-ops-2-custom-perks)  
+- [Perma Perks Unlocked](https://github.com/osmnbtrclk/bo2_zm_bots)  
+- [Share Box / Perks in Box](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)  
+- [Vanguard Perk HUD Animation](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation)  
+- [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)
 
 ---
 
