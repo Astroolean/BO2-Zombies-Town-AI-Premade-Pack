@@ -17,6 +17,9 @@ The folder was too big so you can download it here:
 - [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)  
 - [Cold War Rounds Algorithm](https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm)  
 - [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)
+- [Complete Texture Overhaul]([https://forum.plutonium.pw/topic/29069/release-zm-exfil-system](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival))  
+- [ADDS EXO-SUIT]([https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm](https://forum.plutonium.pw/topic/16912/release-zombies-exo-suit-mod))  
+- [Vanguard Perk HUD Animation]([https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation))
 
 ---
 
