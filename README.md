@@ -4,7 +4,7 @@
 
 The folder was too big so you can download it here:
 
-👉 [**Download images folder**](https://www.mediafire.com/file/y60abm6iwqlaa5j/images.rar/file)
+👉 [**Download images folder**](https://www.mediafire.com/file/7qhpgyo01tqn54t/images.rar/file)
 
   - Go to your **C:\Users\%user%\AppData\Local\Plutonium\storage\t6** folder.
   - Create a new folder called **Backup** and make a backup of your current **Scirpts** and **Images** folders.
