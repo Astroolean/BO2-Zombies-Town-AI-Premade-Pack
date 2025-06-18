@@ -4,7 +4,7 @@
 
 The folder was too big so you can download it here:
 
-👉 [**Download images folder**](https://www.mediafire.com/file/f23prijq3pv6hj2/images.rar/file)
+👉 [**Download images folder**](https://www.mediafire.com/file/y60abm6iwqlaa5j/images.rar/file)
 
 ## 🔗 Linked Mods & Resources
 
