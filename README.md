@@ -6,6 +6,13 @@ The folder was too big so you can download it here:
 
 👉 [**Download images folder**](https://www.mediafire.com/file/y60abm6iwqlaa5j/images.rar/file)
 
+  - Go to your **C:\Users\%user%\AppData\Local\Plutonium\storage\t6** folder.
+  - Create a new folder called **Backup** and make a backup of your current **Scirpts** and **Images** folders.
+  - Remove your **Scirpts** and **Images** folders. Replace with these new **Scirpts** and **Images** folders.
+  - After that is done go to your games main directory. Main game files **C:\Games\pluto_t6_full_game**.
+  - Drag and drop **Victous Maps** sabs files from **Spongebob Zombie Announcer** into the **sound** folder.
+  - After all this is done everything should be good to go, long live black ops 2...
+
 ## 🔗 Linked Mods & Resources
 
 - [Adds Bank / More](https://forum.plutonium.pw/topic/37280/bo2-zombies-custom-control-pannel-gsc-menu)  
