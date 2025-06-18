@@ -110,6 +110,27 @@ This is me using my time to give back to the game — maybe someone will find th
 -
 ![14](https://github.com/user-attachments/assets/4238589d-751e-4271-b78c-3e46cc7a5a58)
 -
+![15](https://github.com/user-attachments/assets/84e65ace-24ea-4c33-be58-4a4b99c12b76)
+-
+![16](https://github.com/user-attachments/assets/b086b491-689e-41bd-86c7-58ea16f57e54)
+-
+![17](https://github.com/user-attachments/assets/6e16f821-9009-44a8-b08d-e5f6b8962333)
+-
+![18](https://github.com/user-attachments/assets/1de437b9-ad6e-4e98-8a55-944fbb200661)
+-
+![19](https://github.com/user-attachments/assets/573f5de7-dc22-4f27-bb73-473aa60737e7)
+-
+![20](https://github.com/user-attachments/assets/fe3569d9-2405-47b3-8fa3-f0884182cbac)
+-
+![21](https://github.com/user-attachments/assets/a911963c-88ed-4aa1-8444-66214a308ef3)
+-
+![22](https://github.com/user-attachments/assets/f0ce62be-a488-4ca6-812e-edeff77055a6)
+-
+![23](https://github.com/user-attachments/assets/1ee92596-a7af-4813-ad9c-1cdf27471669)
+-
+![24](https://github.com/user-attachments/assets/ce5cc59a-a0c2-4bd2-900e-c290614e1085)
+-
+
 
 
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
