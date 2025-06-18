@@ -90,7 +90,11 @@ This is me using my time to give back to the game — maybe someone will find th
 
 ## 📸 Screenshots
 
-![1](https://github.com/user-attachments/assets/a1f889f8-2eba-41ea-9463-0410fb201009)
+![76fa42ff3805d922f394490ba3853371](https://github.com/user-attachments/assets/9f69b14c-efe1-4e16-a416-3f12252eab58)
+-
+![9b7e4af6a1c1dcfebe369ff1e6344ea1](https://github.com/user-attachments/assets/81cc8c78-1a04-45b4-b4aa-9ea02e497f9f)
+-
+![1](https://github.com/user-attachments/assets/d5022e2f-73ba-4fab-a43c-88004a1b3299)
 -
 ![2](https://github.com/user-attachments/assets/a451fef1-74a3-4a2c-ae8a-516fa1440e4f)
 -
