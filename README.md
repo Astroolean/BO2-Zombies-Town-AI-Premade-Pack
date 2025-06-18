@@ -246,6 +246,34 @@ This is me using my time to give back to the game — maybe someone will find th
 
 ---
 
+## 🦾 Exo Suit Movement System
+
+This system gives the player advanced Exo-style mobility while mid-air.
+
+- 🔋 **Exo Boost System**  
+  Players have 100 boost that regenerates over time. Abilities cost boost to use.
+
+- 🚀 **Double Jump (Jetpack)**  
+  Tap **Jump** mid-air to launch upward.  
+  - Cost: 20 boost  
+  - Limit: 1 use per airtime  
+
+- 🏃‍♂️ **Air Dash (Sprint Boost)**  
+  Tap **Sprint** mid-air to dash forward.  
+  - Cost: 20 boost  
+  - Limit: 1 use per airtime  
+
+- 💥 **Slam Attack**  
+  While airborne and after jumping, tap **Crouch** to slam down.  
+  - Requires **PhD Flopper**  
+  - Deals AoE explosion on impact  
+  - Cost: 30 boost  
+
+- ⚡ **Boost Regeneration**  
+  Begins 3 seconds after last use, restoring 5 boost every 0.25 seconds until full.
+
+---
+
 ## ⚙️ `custom_menu.gsc` Version 2 Updates
 
 ### Zombie Counter & HUD
