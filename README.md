@@ -365,7 +365,7 @@ This update improves gameplay and UI by:
 - Revamping `custom_gamble.gsc` with gambling mode switching, layered debt system, and updated reward mechanics.
 - Improving HUD prompts and interaction controls for gambling.
 
-These improvements bring deeper gameplay mechanics, clearer feedback, and a more polished user experience. A special thanks to @SniperCHYF25 for helping make this possible with what he created.
+These improvements bring deeper gameplay mechanics, clearer feedback, and a more polished user experience.
 
 ---
 I plan to keep experimenting and pushing what *Town* can be with AI and community help.  
