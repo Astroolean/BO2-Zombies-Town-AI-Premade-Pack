@@ -21,14 +21,14 @@ The folder was too big so you can download it here:
 - [All Weapons](https://forum.plutonium.pw/topic/37621/release-zm-mod-zm_weapons-adding-all-weapons-to-maps)  
 - [Alternate Ammo Types (AATs)](https://forum.plutonium.pw/topic/16795/release-zombies-black-ops-2-alternative-ammo-types)  
 - [Cold War Rounds Algorithm](https://forum.plutonium.pw/topic/39233/zm-cold-war-zombies-amount-per-round-similar-algorithm)  
-- [Complete Texture Overhaul](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival)  
+- [Complete Texture Overhaul](https://forum.plutonium.pw/topic/26232/under-the-influence-of-alcohol-i-modified-town-survival)
+- [Custom Powerups](https://forum.plutonium.pw/topic/70/release-gsc-zombies-custom-powerup-unlimited-ammo)
 - [More Perks](https://forum.plutonium.pw/topic/32538/release-zm-black-ops-2-custom-perks)  
 - [Perma Perks Unlocked](https://github.com/osmnbtrclk/bo2_zm_bots)  
 - [Share Box / Perks in Box](https://forum.plutonium.pw/topic/14492/release-zombies-share-mystery-box-perks-in-mysterybox)
 - [Spongebob Zombie Announcer](https://forum.plutonium.pw/topic/24019/release-zm-spongebob-announcer-voice)
 - [Vanguard Perk HUD Animation](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation)  
 - [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)
-- [Custom Powerups](https://forum.plutonium.pw/topic/70/release-gsc-zombies-custom-powerup-unlimited-ammo)
 
 ---
 
