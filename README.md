@@ -6,7 +6,7 @@ The folder was too big so you can download it here:
 
 👉 [**Download images folder**](https://www.mediafire.com/file/7qhpgyo01tqn54t/images.rar/file)
 
-  - Go to your **C:\Users\%user%\AppData\Local\Plutonium\storage\t6** folder.
+  - Go to your **C:\Users\(yourname)\AppData\Local\Plutonium\storage\t6** folder.
   - Create a new folder called **Backup** and make a backup of your current **Scirpts** and **Images** folders.
   - Remove your **Scirpts** and **Images** folders. Replace with these new **Scirpts** and **Images** folders.
   - After that is done go to your games main directory. Main game files **C:\Games\pluto_t6_full_game**.
