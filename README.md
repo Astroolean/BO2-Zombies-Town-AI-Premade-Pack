@@ -182,6 +182,71 @@ This is me using my time to give back to the game — maybe someone will find th
 
 ---
 
+## 🎁 Mystery Powerups — Teddy Bear Drops
+
+All custom powerups are dropped using the 🧸 **"zombie_teddybear"** model.  
+Players **won't know what they're getting until it's picked up** — could be a reward... or a penalty!
+
+
+### ⚡ `round_skip` Powerup
+- **Display Message:** `Round Skipped!`
+- **Announcer Sound:** `zmb_spawn`
+- **Player Sound:** `zmb_cha_ching`
+- **Effect:**
+  - Instantly ends the current zombie round.
+  - If `level.zombie_round_go_to_next_round` is available, it uses that.
+  - Otherwise, kills all zombies and forces the round to end.
+
+
+### 💸 `pay_taxes` Powerup
+- **Display Message:** `PAYING TAXES!`
+- **Announcer Sound:** `zmb_pay_taxes_announcer`
+- **Player Sound:** `zmb_powerup_pay_taxes_plr`
+- **Effect:**
+  - Each player loses **50% of their current points**.
+  - Displays: `^1-[amount] Points! ^7(Taxes Paid)`
+  - A punishment disguised as a powerup.
+
+
+### 🟢 `unlimited_ammo` Powerup
+- **HUD Message:** `Unlimited Ammo!`
+- **Announcer Sound (global):** `vox_zm_powerup_insta_kill` *(placeholder)*
+- **Player Sound:** `zmb_insta_kill`
+- **Effect:**
+  - Gives all players **infinite clip ammo** (150 clip refill every 0.05s).
+  - Lasts for `level.unlimited_ammo_duration` (default: 60s).
+  - Displays animated HUD and blinking icon.
+
+
+### 💰 `blood_money` Powerup
+- **HUD Message:** `Blood Money!`
+- **Announcer Sound:** `zmb_bloodmoney_announcer_voice`
+- **Player Sound:** `zmb_bldmoney_chant`
+- **Effect:**
+  - Each player receives a **random point bonus between 500–2500**.
+  - Displays: `^5Blood Money Activated! ^7+[amount] Points!`
+  - Lasts for `level.blood_money_duration` (default: 60s).
+
+
+### 🔥 `fire_sale` Powerup
+- **HUD Message:** `Fire Sale!`
+- **Announcer Sound:** `zmb_firesale_announcer_voice`
+- **Player Sound:** `zmb_firesale_plr`
+- **Effect:**
+  - Reduces **Mystery Box cost to 10 points** for everyone.
+  - Restores price to `level.original_box_price` or `950` after it ends.
+  - Animated HUD and blinking icon included.
+  - Lasts for `level.fire_sale_duration` (default: 60s).
+
+
+### 🔀 Powerup Mechanic: **Teddy Bear Mystery Box-Style Drop**
+- All the above powerups share a **single drop model**: `zombie_teddybear`.
+- Adds randomness and suspense — will it be a **reward** like Blood Money?  
+  Or a **punishment** like Pay Taxes?
+- Keeps gameplay dynamic and fun in every round!
+
+---
+
 ## 🔫 Custom Ammunition System (`custom_ammo.gsc`)
 
 > *Pack-a-Punch gets a full upgrade.*
