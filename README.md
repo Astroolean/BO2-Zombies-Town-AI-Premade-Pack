@@ -28,6 +28,7 @@ The folder was too big so you can download it here:
 - [Spongebob Zombie Announcer](https://forum.plutonium.pw/topic/24019/release-zm-spongebob-announcer-voice)
 - [Vanguard Perk HUD Animation](https://forum.plutonium.pw/topic/27422/release-zm-vanguard-perk-hud-animation)  
 - [ZM Exfil System](https://forum.plutonium.pw/topic/29069/release-zm-exfil-system)
+- [Custom Powerups](https://forum.plutonium.pw/topic/70/release-gsc-zombies-custom-powerup-unlimited-ammo)
 
 ---
 
