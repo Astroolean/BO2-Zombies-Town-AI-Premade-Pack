@@ -82,12 +82,26 @@ init()
 
     level.smartNukeEnabled = false; // Set default state (Nuke kills all)
 
+    level.start_time = getTime(); // Start of match
+    level thread monitor_round_start(); // Monitor rounds
+
     // Initialize main game-level threads.
     level thread onPlayerConnect();
     level thread auto_deposit_on_end_game();
 
     // Ensure the script runs in both server and custom games.
     setDvar("sv_allowscript", 1);
+}
+
+monitor_round_start()
+{
+    level endon("game_ended");
+
+    for (;;)
+    {
+        level waittill("start_of_round"); // Triggered when new round starts
+        level.round_start_time = getTime();
+    }
 }
 
 // --- PLAYER CONNECTION AND SPAWN HANDLING ---
@@ -136,7 +150,7 @@ onPlayerSpawned()
         if (!self.MenuInit)
         {
             self.MenuInit = true; // Set flag to true to prevent re-initialization.
-            //self.score = 5000; // Give 500,000 points for testing
+            self.score = 500000; // Give 500,000 points for testing
             self thread MenuInit();              // Initialize the custom menu system.
             self thread closeMenuOnDeath();      // Setup thread to close menu on player death.
             self freezeControls(false);         // Ensure controls are not frozen initially.
@@ -1225,18 +1239,11 @@ set_increased_health()
     self iPrintLnBold("^7Your max health has been set to ^5150!");
 }
 
-// Initializes player-specific HUD elements.
+// HUD Setup: Call this for each player when they spawn
 init_player_hud()
 {
     self endon("disconnect");
 
-    // Create and position player HUD elements for health, rank, and bonuses.
-    // Positioned at the top-right corner, slightly offset to avoid overlap with menu instructions.
-    // These are now created once if not defined, and then updated in the loop.
-    // REMOVED: Health HUD initialization
-    // if (!isDefined(self.healthHud)) self.healthHud = self createText("objective", 1.2, "LEFT", "TOP", 10, 10, "Health: 100");
-
-    // Ensure HUD elements are created only once.
     if (!isDefined(self.rankLevelHud)) {
         self.rankLevelHud = self createText("objective", 1.0, "LEFT", "TOP", -90, 30, "^5Level^7: 1");
         self.rankLevelHud.alpha = 1;
@@ -1253,24 +1260,46 @@ init_player_hud()
         self.highestRoundHud = self createText("objective", 1.0, "LEFT", "TOP", -90, 75, "^5Highest Round^7: 0");
         self.highestRoundHud.alpha = 1;
     }
-
-    // Ensure highestRound is initialized to 0 if it hasn't been loaded from a Dvar yet.
-    if (!isDefined(self.highestRound)) {
-        self.highestRound = 0;
+    if (!isDefined(self.roundTimeHud)) {
+        self.roundTimeHud = self createText("objective", 1.0, "LEFT", "TOP", -90, 90, "^5Round Time^7: --:--");
+        self.roundTimeHud.alpha = 1;
+    }
+    if (!isDefined(self.totalTimeHud)) {
+        self.totalTimeHud = self createText("objective", 1.0, "LEFT", "TOP", -90, 105, "^5Total Time^7: --:--");
+        self.totalTimeHud.alpha = 1;
     }
 
-    // Loop to continuously update the text of the HUD elements.
-    // This loop now only updates the text, the elements are created above.
-    for(;;)
+    if (!isDefined(self.highestRound))
+        self.highestRound = 0;
+
+    for (;;)
     {
-        // REMOVED: Health HUD update
-        // self.healthHud setText("Health: " + self.health);
         self.rankLevelHud setText("^5Level^7: " + self.rankLevel);
-        // Display point and bullet damage bonuses based on the player's current rank.
         self.pointScalingHud setText("^5Point Scaling^7: + " + int(self.pointBonus * 100) + "%");
         self.bulletDamageHud setText("^5Bullet Damage^7: + " + int(self.bulletDamageBonus * 100) + "%");
         self.highestRoundHud setText("^5Highest Round^7: " + self.highestRound);
-        wait 0.1; // Update every 0.1 seconds.
+
+        // Round Time
+        if (isDefined(level.round_start_time)) {
+            roundElapsed = int((getTime() - level.round_start_time) / 1000);
+            minutes = int(roundElapsed / 60);
+            seconds = roundElapsed % 60;
+            self.roundTimeHud setText("^5Round Time^7: " + minutes + ":" + (seconds < 10 ? "0" + seconds : seconds));
+        } else {
+            self.roundTimeHud setText("^5Round Time^7: --:--");
+        }
+
+        // Total Time
+        if (isDefined(level.start_time)) {
+            totalElapsed = int((getTime() - level.start_time) / 1000);
+            minutes = int(totalElapsed / 60);
+            seconds = totalElapsed % 60;
+            self.totalTimeHud setText("^5Total Time^7: " + minutes + ":" + (seconds < 10 ? "0" + seconds : seconds));
+        } else {
+            self.totalTimeHud setText("^5Total Time^7: --:--");
+        }
+
+        wait 0.1;
     }
 }
 
