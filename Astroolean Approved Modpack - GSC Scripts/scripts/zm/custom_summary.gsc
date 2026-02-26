@@ -1,5 +1,5 @@
 // ============================================================================
-// ROUND COMPLETION SUMMARY (ORIGINS / zm_tomb) — CUSTOM SCRIPT
+// ROUND COMPLETION SUMMARY (ALL ZOMBIES MAPS) — CUSTOM SCRIPT
 // Created by: Astroolean
 //
 // What this script does:
@@ -31,7 +31,8 @@
 //   set cs_cooldown_ms 2500   // Minimum time between summaries (milliseconds)
 //
 // Notes:
-// - This script only runs on Origins (mapname "zm_tomb") by design.
+// - This script now runs on all Zombies maps by default.
+//   (If you ever want to disable it on a specific map, add a map gate in cs_boot().)
 // - "Heads-Up Display" is abbreviated as HUD inside variable names in this file.
 // ============================================================================
 //
@@ -66,15 +67,15 @@ init()
 
 // ---------------------------------------------------------------------------
 // cs_boot()
-// One-time initialization and map gating.
-// Only enables on Origins (zm_tomb).
+// One-time initialization.
+// Runs on all Zombies maps.
 // Sets safe defaults for dvars if they are missing.
 // Starts the connection listener thread.
 // ---------------------------------------------------------------------------
 cs_boot()
 {
-    if (getDvar("mapname") != "zm_tomb")
-        return;
+    // Map gate removed: this summary now runs on all Zombies maps.
+    // If you ever want to disable it on a specific map, re-add a check here.
 
     // One instance only
     if (isDefined(level.cs_loaded) && level.cs_loaded)
