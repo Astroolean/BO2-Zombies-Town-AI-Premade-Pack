@@ -980,8 +980,8 @@ on_players_spawned()
         self.barY = -60;
         self.playerBarW = 170;
         self.playerBarH = 10;
-        self.playerBarX = -57;
-        self.playerBarY = -74;
+        self.playerBarX = -85;
+        self.playerBarY = -54;
         self.playerBarON = 1;
 
         // safer defaults to prevent SG_FindConfigstringIndex overflow from live hp text spam
@@ -1385,15 +1385,15 @@ playerHealthBarMonitor()
     pBarH = self.playerBarH;
 
     if (!isdefined(self.playerBarX))
-        self.playerBarX = -57;
+        self.playerBarX = -85;
     if (!isdefined(self.playerBarY))
-        self.playerBarY = -74;
+        self.playerBarY = -54;
 
     pBarX = self.playerBarX;
     pBarY = self.playerBarY;
 
     self.phb_outline = newclienthudelem(self);
-    self.phb_outline.horzalign = "left";
+    self.phb_outline.horzalign = "center";
     self.phb_outline.vertalign = "bottom";
     self.phb_outline.x = pBarX - 1;
     self.phb_outline.y = pBarY - 1;
@@ -1406,7 +1406,7 @@ playerHealthBarMonitor()
     self.phb_outline.foreground = true;
 
     self.phb_bg = newclienthudelem(self);
-    self.phb_bg.horzalign = "left";
+    self.phb_bg.horzalign = "center";
     self.phb_bg.vertalign = "bottom";
     self.phb_bg.x = pBarX;
     self.phb_bg.y = pBarY;
@@ -1419,7 +1419,7 @@ playerHealthBarMonitor()
     self.phb_bg.foreground = true;
 
     self.phb_fg = newclienthudelem(self);
-    self.phb_fg.horzalign = "left";
+    self.phb_fg.horzalign = "center";
     self.phb_fg.vertalign = "bottom";
     self.phb_fg.x = pBarX;
     self.phb_fg.y = pBarY;
@@ -1432,7 +1432,7 @@ playerHealthBarMonitor()
     self.phb_fg.foreground = true;
 
     self.phb_text = newclienthudelem(self);
-    self.phb_text.horzalign = "left";
+    self.phb_text.horzalign = "center";
     self.phb_text.vertalign = "bottom";
     self.phb_text.alignx = "left";
     self.phb_text.aligny = "bottom";
