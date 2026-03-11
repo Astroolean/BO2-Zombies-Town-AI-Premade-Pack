@@ -839,6 +839,123 @@ on_player_connect_player()
     }
 }
 
+
+// ----------------------------------------------------------------------------------------------------
+// Function: hb_ensure_global_player_health_settings()
+// Purpose : Force the custom player-health targets we want across all maps.
+// Params  : none
+// Returns : none
+// Notes   :
+//   - Makes Juggernog resolve to 250 even on maps where the machine/stock map rules are missing.
+//   - Base health target for the HUD/controller is 150.
+// ----------------------------------------------------------------------------------------------------
+hb_ensure_global_player_health_settings()
+{
+    if (!isdefined(level.hb_base_player_health) || level.hb_base_player_health <= 0)
+        level.hb_base_player_health = 150;
+
+    if (!isdefined(level.hb_jugg_player_health) || level.hb_jugg_player_health <= 0)
+        level.hb_jugg_player_health = 250;
+
+    if (isdefined(level.zombie_vars))
+    {
+        level.zombie_vars["zombie_perk_juggernaut_health"] = level.hb_jugg_player_health;
+        level.zombie_vars["zombie_perk_juggernaut_health_upgrade"] = level.hb_jugg_player_health;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------
+// Function: hb_get_desired_player_max_health()
+// Purpose : Return the max HP the player should currently have under this mod's rules.
+// Params  : none
+// Returns : int
+// Notes   :
+//   - Uses HasPerk("specialty_armorvest") directly so Juggernog health still works on maps that do not
+//     naturally support the machine, as long as the perk itself was granted.
+// ----------------------------------------------------------------------------------------------------
+hb_get_desired_player_max_health()
+{
+    self hb_ensure_global_player_health_settings();
+
+    if (self HasPerk("specialty_armorvest"))
+        return level.hb_jugg_player_health;
+
+    return level.hb_base_player_health;
+}
+
+// ----------------------------------------------------------------------------------------------------
+// Function: playerHealthRulesMonitor()
+// Purpose : Enforce custom base/Juggernog health values independently of map-specific stock logic.
+// Params  : none
+// Returns : none
+// Notes   :
+//   - Fixes maps where Juggernog can be granted but does not actually change player health.
+//   - Also normalizes bad startup states like 1000/100 before the HUD is allowed to render.
+// ----------------------------------------------------------------------------------------------------
+playerHealthRulesMonitor()
+{
+    self endon("disconnect");
+    level endon("end_game");
+    self notify("hb_end_player_health_rules");
+    self endon("hb_end_player_health_rules");
+
+    wait 0.05;
+
+    lastDesiredMax = -1;
+
+    while (isalive(self))
+    {
+        self hb_ensure_global_player_health_settings();
+
+        desiredMax = self hb_get_desired_player_max_health();
+
+        if (!isdefined(desiredMax) || desiredMax <= 0)
+        {
+            wait 0.05;
+            continue;
+        }
+
+        currentHP = self.health;
+        currentMax = self.maxhealth;
+
+        if (!isdefined(currentHP) || currentHP <= 0)
+        {
+            wait 0.05;
+            continue;
+        }
+
+        if (!isdefined(currentMax) || currentMax <= 0 || currentMax != desiredMax)
+        {
+            self setmaxhealth(desiredMax);
+            self.maxhealth = desiredMax;
+            self.health = desiredMax;
+            lastDesiredMax = desiredMax;
+            wait 0.05;
+            continue;
+        }
+
+        if (currentHP > desiredMax)
+        {
+            self.health = desiredMax;
+            wait 0.05;
+            continue;
+        }
+
+        if (lastDesiredMax != desiredMax)
+        {
+            if (currentHP < 1 || currentHP > desiredMax)
+                self.health = desiredMax;
+
+            self setmaxhealth(desiredMax);
+            self.maxhealth = desiredMax;
+            lastDesiredMax = desiredMax;
+        }
+
+        wait 0.05;
+    }
+}
+
+
 // ----------------------------------------------------------------------------------------------------
 // Function: on_players_spawned()
 // Purpose : Per-player spawn loop. Sets defaults (sizes, language, safe text mode) and starts monitors.
@@ -861,8 +978,10 @@ on_players_spawned()
         self.sizeN = 1;
         self.langLEN = 1;
         self.barY = -60;
-        self.playerBarW = 140;
-        self.playerBarH = 8;
+        self.playerBarW = 170;
+        self.playerBarH = 10;
+        self.playerBarX = -57;
+        self.playerBarY = -74;
         self.playerBarON = 1;
 
         // safer defaults to prevent SG_FindConfigstringIndex overflow from live hp text spam
@@ -871,6 +990,7 @@ on_players_spawned()
         self.hb_text_min_interval = 0.08;
         self.hb_next_text_update_time = 0;
 
+        self thread playerHealthRulesMonitor();
         self thread playerHealthBarMonitor();
     }
 }
@@ -1263,8 +1383,14 @@ playerHealthBarMonitor()
 
     pBarW = self.playerBarW;
     pBarH = self.playerBarH;
-    pBarX = 12;
-    pBarY = -42;
+
+    if (!isdefined(self.playerBarX))
+        self.playerBarX = -57;
+    if (!isdefined(self.playerBarY))
+        self.playerBarY = -74;
+
+    pBarX = self.playerBarX;
+    pBarY = self.playerBarY;
 
     self.phb_outline = newclienthudelem(self);
     self.phb_outline.horzalign = "left";
@@ -1311,9 +1437,9 @@ playerHealthBarMonitor()
     self.phb_text.alignx = "left";
     self.phb_text.aligny = "bottom";
     self.phb_text.x = pBarX;
-    self.phb_text.y = pBarY - pBarH - 2;
+    self.phb_text.y = pBarY - pBarH - 1;
     self.phb_text.alpha = 0;
-    self.phb_text.fontscale = 1;
+    self.phb_text.fontscale = 1.3;
     self.phb_text.sort = 3;
     self.phb_text.hidewheninmenu = true;
     self.phb_text.archived = false;
@@ -1322,6 +1448,35 @@ playerHealthBarMonitor()
 
     // Right-side percent text removed by request (keep only left HP current/max text).
     self.phb_pct = undefined;
+
+    // Startup stabilization:
+    // Do not let the HUD show until the custom health controller has normalized the player's state.
+    // This blocks ugly spawn-frame values like 1000/100 from ever being rendered.
+    stableHealthSamples = 0;
+    while (isalive(self))
+    {
+        desiredMax = self hb_get_desired_player_max_health();
+
+        if (!isdefined(self.health) || !isdefined(self.maxhealth) || !isdefined(desiredMax) || desiredMax <= 0)
+        {
+            stableHealthSamples = 0;
+            wait 0.05;
+            continue;
+        }
+
+        if (self.maxhealth != desiredMax || self.health <= 0 || self.health > desiredMax)
+        {
+            stableHealthSamples = 0;
+            wait 0.05;
+            continue;
+        }
+
+        stableHealthSamples++;
+        if (stableHealthSamples >= 3)
+            break;
+
+        wait 0.05;
+    }
 
     self.phb_outline fadeovertime(0.5);
     self.phb_outline.alpha = 0.8;
@@ -1335,7 +1490,7 @@ playerHealthBarMonitor()
 
     lastHP = -1;
     lastMaxHP = -1;
-    maxHP = self.maxhealth;
+    maxHP = self hb_get_desired_player_max_health();
     pulseActive = false;
 
     while (isalive(self))
@@ -1348,12 +1503,44 @@ playerHealthBarMonitor()
 
         currentHP = self.health;
         maxHP = self.maxhealth;
+        desiredMax = self hb_get_desired_player_max_health();
+
+        if (!isdefined(currentHP) || !isdefined(maxHP) || !isdefined(desiredMax) || maxHP <= 0 || desiredMax <= 0)
+        {
+            if (isdefined(self.phb_fg))
+                self.phb_fg.alpha = 0;
+            if (isdefined(self.phb_text))
+                self.phb_text.alpha = 0;
+            wait 0.05;
+            continue;
+        }
+
+        if (maxHP != desiredMax || currentHP <= 0 || currentHP > desiredMax)
+        {
+            if (isdefined(self.phb_fg))
+                self.phb_fg.alpha = 0;
+            if (isdefined(self.phb_text))
+                self.phb_text.alpha = 0;
+            wait 0.05;
+            continue;
+        }
+
+        if (isdefined(self.phb_fg) && self.phb_fg.alpha != 1)
+            self.phb_fg.alpha = 1;
+        if (isdefined(self.phb_text) && self.phb_text.alpha != 1)
+            self.phb_text.alpha = 1;
 
         if (currentHP != lastHP || maxHP != lastMaxHP)
         {
             lastHP = currentHP;
             lastMaxHP = maxHP;
             healthFraction = currentHP / maxHP;
+
+            if (healthFraction < 0)
+                healthFraction = 0;
+            if (healthFraction > 1)
+                healthFraction = 1;
+
             pctValue = int(healthFraction * 100);
             barWidth = int(self.playerBarW * healthFraction);
             if (barWidth < 1)
